@@ -1,0 +1,43 @@
+/* index.css - Custom styles for article page (index.html) */
+
+/* Hide scrollbar on the body to prevent layout shift with sticky elements */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky header animation */
+#sticky-header {
+  will-change: transform;
+}
+
+#sticky-header.visible {
+  transform: translateY(0);
+}
+
+#sticky-header:not(.visible) {
+  transform: translateY(-100%);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add bottom padding on mobile to account for fixed CTA bar */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
+
+/* Image aspect ratio and loading */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Blockquote styling */
+blockquote {
+  margin: 0;
+}

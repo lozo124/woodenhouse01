@@ -1,0 +1,33 @@
+/* pdp.css - Custom styles for product landing page (pdp.html) */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header scroll shadow transition */
+#main-header {
+  will-change: box-shadow;
+}
+
+#main-header.scrolled {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add bottom padding on mobile to account for fixed CTA bar */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* Image aspect ratio and loading */
+img {
+  height: auto;
+  max-width: 100%;
+}
